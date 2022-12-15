@@ -1,0 +1,101 @@
+
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  height: 0;
+  width: 0;
+}
+
+label {
+  width: calc(500px / 5);
+  height: calc(200px / 5);
+  position: relative;
+  display: block;
+  background-color: #ebebeb;
+  border-radius: calc(200px / 5);
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4); inset: 0px -5p 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+label:after {
+  content: "";
+  width: calc(180px / 5);
+  height: calc(180px / 5);
+  position: absolute;
+  top: calc(10px / 5);
+  left: calc(10px / 5);
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: calc(180px / 5);
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label:after {
+  left: calc(490px / 5);
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,#777,#3a3a3a)
+}
+
+label:active:after {
+  width: calc(260px / 5);
+}
+
+.background {
+  background: #fff;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+
+input:checked + label + 
+.background {
+  background: #242424;
+  color: white;
+}
+
+input:checked + .nav__link--anchor {
+  color: white;
+}
+
+label svg {
+  position: absolute;
+  width: calc(120px / 5);
+  top: calc(40px / 5);
+  z-index: 100;
+}
+
+label svg.sun {
+  left: calc(40px / 5);
+  fill: #fff;
+  transition: 0.3s;
+}
+
+label svg.moon {
+  left: calc(340px / 5);
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+input:checked + label svg.sun {
+  fill: #7e7e7e;
+}
+
+input:checked + label svg.moon {
+  fill:#fff;
+}
+

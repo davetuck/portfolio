@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave Tucker's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./DT Assets/logo 3 (cropped).png"
+    />
+    <script
+      src="https://kit.fontawesome.com/0e4fc7ca9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+      <section id="about-me">
+        <nav>
+          <div class="personal__logo">Dave Tucker</div>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a
+                href="#languages"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Languages</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="#projects"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="#footer"
+                class="nav__link--anchor nav__link--anchor-primary"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a class="menu__link" href="#languages" onclick="closeMenu()"
+                  >Languages</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#projects" onclick="closeMenu()"
+                  >Projects</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#footer" onclick="closeMenu()">
+                  <button class="contact__button">Contact</button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="flex flex-1">
+          <div class="about-me__info row">
+            <div class="about-me__info--container">
+              <figure class="about-me__picture--mask">
+                <img
+                  src="./DT Assets/Profile Photo (Vegas).png"
+                  class="about-me__picture"
+                  alt="Picture of Me!"
+                />
+              </figure>
+              <h1 class="about-me__info--title">
+                Hey! I'm
+                <span class="text--purple">Dave Tucker</span>&nbsp;<span
+                  class="wave"
+                  >👋🏼</span
+                >
+              </h1>
+              <p class="about-me__info--para">
+                I'm a
+                <strong class="text--purple">frontend software engineer</strong>
+                with a love for collaboration and an insatiable appetite for
+                constructing mesmerizing, responsive, and performant web
+                applications - which prioritize UX/UI, and impact individuals in
+                a positive and inviting way.
+              </p>
+              <div class="about-me__links">
+                <a
+                  href="https://www.linkedin.com/in/dave-tucker-frontend-software-engineer/"
+                  target="_blank"
+                  class="about-me__link"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/davetuck"
+                  target="_blank"
+                  class="about-me__link"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="mailto:dtuck15@gmail.com"
+                  target="_blank"
+                  class="about-me__link"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a
+                  href="./DT Assets/Dave Tucker Resume.pdf"
+                  target="_blank"
+                  class="about-me__link"
+                >
+                  <i class="fa-solid fa-file-pdf"></i>
+                </a>
+              </div>
+            </div>
+            <figure class="about-me__img--container">
+              <img
+                class="img-large img-large__1"
+                src="./DT Assets/transparent1.png"
+                alt=""
+              />
+              <img
+                class="img-large img-large__2"
+                src="./DT Assets/transparent2.png"
+                alt=""
+              />
+              <img
+                class="img-large img-large__3"
+                src="./DT Assets/transparent3.png"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="languages">
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">
+              My <span class="text--purple">Technology Stack</span>
+            </h1>
+            <div class="language__list">
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                    alt="HTML"
+                    class="language__image"
+                  />
+                </figure>
+                <span class="language__name">HTML</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img
+                    src="	https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                    alt="CSS"
+                    class="language__image"
+                  />
+                </figure>
+                <span class="language__name">CSS</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                    alt="JavaScript"
+                    class="language__image"
+                  />
+                </figure>
+                <span class="language__name">JavaScript</span>
+              </div>
+              <div class="language">
+                <figure class="language__img--wrapper">
+                  <img
+                    src="	https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                    alt=""
+                    class="language__image"
+                  />
+                </figure>
+                <span class="language__name">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">My <span>Projects</span></h1>
+            <h2 class="small-phones__info">(Press & Hold for Info / Links)</h2>
+            <ul class="project__list">
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./DT Assets/Treact.png"
+                    class="project__img"
+                    alt="Corporate Website"
+                  />
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Corporate Website Project
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                      <p class="project__description--para">
+                        This is a project template I've been constructing, in order to showcase my capabilities of creating a professional, usable website for a medium to large corporation.
+                      </p>
+                    </h4>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/davetuck/Final-Project"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="./Treact/Treact.html"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./DT Assets/eCommerce.png"
+                    class="project__img"
+                    alt="Library eCommerce Website"
+                  />
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Library eCommerce Website
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                      <p class="project__description--para">
+                        This is a project template I've been constructing, in order to showcase my capabilities of creating a professional, usable eCommerce site.
+                      </p>
+                    </h4>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/davetuck/E-Commerce-Website"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="./Library/library.html"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./DT Assets/GeekPros.png"
+                    class="project__img"
+                    alt="Car Subscription Project"
+                  />
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Computer / SmartPhone Repair & Support
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript
+                      <p class="project__description--para">
+                        I worked closely with a computer hardware technologist
+                        to create and implement this website in a way that looks
+                        both inviting and not intimidating. We are targeting
+                        people who struggle including today's technology in to
+                        their lives. This website got an incredible response
+                        from people for both it's informative nature and
+                        simplicity. I really liked working on the stars in
+                        particular, it brought a lot of people back to their
+                        roots working on Windows 95!
+                      </p>
+                    </h4>
+                    <div class="project__description--links">
+                      <a
+                        href="https://www.github.com/davetuck/GeekPros"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://geekproshelp.com"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./DT Assets/loopit.png"
+                    class="project__img"
+                    alt="Car Subscription Project"
+                  />
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Car Sales Project
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, React
+                      <p class="project__description--para">
+                        This is another website template I've put together to showcase my abilities.  It isn't active yet, so the link won't work.
+                      </p>
+                    </h4>
+                    <div class="project__description--links">
+                      <a
+                        href="https://www.github.com/yourlink"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://www.yourwebsite.com"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img
+                src="./DT Assets/logo 3 (cropped).png"
+                class="footer__logo--image"
+                alt=""
+              />
+            </figure>
+            <span class="footer__logo--popper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/davetuck"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/dave-tucker-frontend-software-engineer/"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              href="mailto:dtuck15@gmail.com"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >Email</a
+            >
+            <a
+              href="./DT Assets/Dave Tucker Resume.pdf"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2023</div>
+        </div>
+      </footer>
+  </body>
+</html>
